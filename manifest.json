@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "NEO Bomb",
+    "version": "0.1",
+    "description": "Mess with your submissions and content in NEO-LMS just for fun",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://*.neolms.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "assets/icons/icon-128.png"
+    }
+}
